@@ -1,0 +1,5 @@
+DR Number,Date Reported,Date Occurred,Time Occurred,Area ID,Area Name,Reporting District,Crime Code,Crime Code Description,MO Codes,Victim Age,Victim Sex,Victim Descent,Premise Code,Premise Description,Weapon Used Code,Weapon Description,Status Code,Status Description,Crime Code 1,Crime Code 2,Crime Code 3,Crime Code 4,Address,Cross Street,Location 
+001208575,03/14/2013,03/11/2013,1800,12,77th Street,1241,626,INTIMATE PARTNER - SIMPLE ASSAULT,0416 0446 1243 2000,30,F,W,502,"MULTI-UNIT DWELLING (APARTMENT, DUPLEX, ETC)",400,"STRONG-ARM (HANDS, FIST, FEET OR BODILY FORCE)",AO,Adult Other,626,,,,6300    BRYNHURST                    AV,,"(33.9829, -118.3338)"
+102005556,01/25/2010,01/22/2010,2300,20,Olympic,2071,510,VEHICLE - STOLEN,,,,,101,STREET,,,IC,Invest Cont,510,,,,VAN NESS,15TH,"(34.0454, -118.3157)"
+0418,03/19/2013,03/18/2013,2030,18,Southeast,1823,510,VEHICLE - STOLEN,,12,,,101,STREET,,,IC,Invest Cont,510,,,,200 E  104TH                        ST,,"(33.942, -118.2717)"
+101822289,11/11/2010,11/10/2010,1800,18,Southeast,1803,510,VEHICLE - STOLEN,,,,,101,STREET,,,IC,Invest Cont,510,,,,88TH,WALL,"(33.9572, -118.2717)"
