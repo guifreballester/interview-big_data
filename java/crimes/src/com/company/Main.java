@@ -21,13 +21,13 @@ public class Main {
         // let's get all districts and weapons
         for (Crime c: crimes){
             if(!c.getReporting_District().isEmpty()){
-                districts.add(c.getReporting_District());
+                districts.add(c.getReporting_District().trim());
             }
             if(!c.getWeapon_used().isEmpty()){
-                weapons.add(c.getWeapon_used());
+                weapons.add(c.getWeapon_used().trim());
             }
             if(!c.getArea_ID().isEmpty()){
-                areas.add(c.getArea_ID());
+                areas.add(c.getArea_ID().trim());
             }
         }
 
@@ -37,8 +37,9 @@ public class Main {
         areas = new ArrayList<>(new HashSet<>(areas));
 
         //printComittedCrimesDistrictWeapon(districts, weapons, crimes);
-        printMostConflictingZones(areas, crimes);
-        
+        //printMostConflictingZones(areas, crimes);
+        printSimilarCrimes(crimes);
+
 
 
 
@@ -86,6 +87,33 @@ public class Main {
         }
         for (District_popularity a: districts_popularity.subList(0,end)){
             System.out.println("Area: "+a.getArea()+ " with committed crimes: "+ a.getPopularity());
+        }
+
+    }
+
+    private static void printSimilarCrimes(List<Crime> crimes){
+        outerloop:
+        for(Crime c2: crimes){
+            for(Crime c1: crimes){
+                if(!c1.getVictim_age().isEmpty() && !c2.getVictim_age().isEmpty()){
+                    if (c1.getArea_ID().equals(c2.getArea_ID()) &&
+                            c1.getWeapon_used().equals(c2.getWeapon_used()) &&
+                            c1.getVictim_sex().equals(c2.getVictim_sex()) &&
+                            c1.getDR_Number() != c2.getDR_Number() &&
+                            Math.abs(Integer.parseInt(c1.getVictim_age())-Integer.parseInt(c2.getVictim_age()))<=10) {
+                        System.out.println("Crime " + c1.getDR_Number() + " and crime " + c2.getDR_Number() + " are probably the same.");
+                        continue outerloop;
+                    }
+                }else {
+                    if (c1.getArea_ID().equals(c2.getArea_ID()) &&
+                            c1.getWeapon_used().equals(c2.getWeapon_used()) &&
+                            c1.getVictim_sex().equals(c2.getVictim_sex()) &&
+                            c1.getDR_Number() != c2.getDR_Number()) {
+                        System.out.println("Crime " + c1.getDR_Number() + " and crime " + c2.getDR_Number() + " are probably the same.");
+                        continue outerloop;
+                    }
+                }
+            }
         }
 
     }
@@ -448,4 +476,22 @@ class District_popularity implements Comparable<District_popularity>{
     public int compareTo(District_popularity district_popularity) {
         return popularity.compareTo(district_popularity.popularity);
     }
+}
+
+class Crimes_Similarities{
+    String area;
+    String weapon;
+    String sex;
+    String age;
+
+    public Crimes_Similarities(String area, String weapon, String sex, String age) {
+        this.area = area;
+        this.weapon = weapon;
+        this.sex = sex;
+        this.age = age;
+    }
+
+
+
+
 }
