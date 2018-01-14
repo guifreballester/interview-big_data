@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-f = open("corpus1.txt", "r")
+f = open("corpus.txt", "r")
 line = f.readline()
 words = line.split(" ")[:-1]
 

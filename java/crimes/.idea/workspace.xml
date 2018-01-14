@@ -15,12 +15,13 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+            <state relative-caret-position="914">
+              <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#printComittedCrimesDistrictWeapon#0;class#Main#0" expanded="false" />
                 <element signature="method#printMostConflictingZones#0;class#Main#0" expanded="false" />
+                <element signature="method#printSimilarCrimes#0;class#Main#0" expanded="false" />
                 <element signature="method#tryParseInt#0;class#Main#0" expanded="false" />
                 <element signature="method#createCrime#0;class#Main#0" expanded="false" />
                 <element signature="class#Crime#0" expanded="false" />
@@ -174,10 +175,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1291" />
-    <option name="y" value="544" />
-    <option name="width" value="1404" />
-    <option name="height" value="1065" />
+    <option name="x" value="144" />
+    <option name="y" value="-9" />
+    <option name="width" value="3698" />
+    <option name="height" value="2171" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -325,7 +326,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1291" y="544" width="3698" height="2171" extended-state="6" />
+    <frame x="144" y="-9" width="3698" height="2171" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -372,6 +373,7 @@
             <element signature="imports" expanded="true" />
             <element signature="method#printComittedCrimesDistrictWeapon#0;class#Main#0" expanded="false" />
             <element signature="method#printMostConflictingZones#0;class#Main#0" expanded="false" />
+            <element signature="method#printSimilarCrimes#0;class#Main#0" expanded="false" />
             <element signature="method#tryParseInt#0;class#Main#0" expanded="false" />
             <element signature="method#createCrime#0;class#Main#0" expanded="false" />
             <element signature="class#Crime#0" expanded="false" />
@@ -508,12 +510,13 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/CSVReader.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
+        <state relative-caret-position="914">
+          <caret line="40" column="4" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#printComittedCrimesDistrictWeapon#0;class#Main#0" expanded="false" />
             <element signature="method#printMostConflictingZones#0;class#Main#0" expanded="false" />
+            <element signature="method#printSimilarCrimes#0;class#Main#0" expanded="false" />
             <element signature="method#tryParseInt#0;class#Main#0" expanded="false" />
             <element signature="method#createCrime#0;class#Main#0" expanded="false" />
             <element signature="class#Crime#0" expanded="false" />
